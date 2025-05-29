@@ -6,7 +6,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    /* link font family Roboto */
 }
 
 nav {
@@ -39,6 +38,16 @@ ul li a {
 }
 .logo a {
     text-decoration: none;
+}
+
+
+              /* HERO SECTION */
+
+.hero-container {
+    background-color: #1F2937;
+    height: 100vh;
+    color: #E5E7EB;
+    display: flex;
 }
 
 
