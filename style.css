@@ -48,15 +48,17 @@ ul li a {
     height: 100vh;
     color: #E5E7EB;
     display: flex;
+    padding-top: 65px;
 }
 
 /* set boundary for contents on left */
 .left-hero {
     display: flex;
     flex-direction: column;
-    width: 50vw;
+    width: 40vw;
     margin-left: 60px;
     border: 2px red solid;
+    height: 80vh;
 }
 
 .hero-container button {
