@@ -13,6 +13,8 @@ nav {
     justify-content: space-between;
     background-color: #1F2937;
     align-items: center;
+    height: 54px;
+    border-bottom: 1px red solid;
 }
 
 .navbar-links {
@@ -57,22 +59,38 @@ ul li a {
     flex-direction: column;
     width: 40vw;
     margin-left: 60px;
-    border: 2px red solid;
+    /* border: 2px red solid; */
     height: 80vh;
 }
 
-.hero-container button {
-    padding: 3px 5px;
-}
-
 /* set boundary for contents on right */
+
+.right-hero img{
+    flex-shrink: 1;
+    flex-grow: 1;
+}
 
 /* heading in hero */
 .hero-heading {
     font-size: 48px;
     font-weight: 900px;
     color: #f9faf8;
+    letter-spacing: 0.8px;
 }
 
+.secondary-text {
+font-size: 18px;
+padding: 14px 0px 43px 0px;
+}
 
+.hero-container button {
+    padding: 4px 10px;
+    font-size: 18px;
+    background-color: #3882F6;
+    border: none;
+    border-radius: 5px;
+    color: #E5E7EB;
+    cursor: pointer;
+    font-weight: bold;
+}
 
