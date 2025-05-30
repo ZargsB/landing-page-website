@@ -94,3 +94,35 @@ padding: 14px 0px 43px 0px;
     font-weight: bold;
 }
 
+
+/* INFO SECTION */
+
+.info-section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+/* info header text */
+.info-section h2{
+    font-size: 36px;
+    color: #1F2937;
+    font-weight: 900;
+    margin-bottom: 100px;
+}
+
+/* info boxes */
+.box-wrapper {
+    display: flex;
+    gap: 24px;
+}
+
+.box {
+    border: #1F2937 5px solid;
+    width: 250px;
+    height: 250px;
+    border-radius: 14px;
+}
