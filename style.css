@@ -6,19 +6,50 @@
 
 html, body {
     font-family: 'Roboto', sans-serif;
-    background: #1F2937;
+    background: var(--background-color);
 }
 h1, h2, h3 {
     color: white;
 }
 
+/* roots section*/
+
+/* ------------------------- */
+/* website color palletes */
+:root {
+--primary-color:;  
+--secondary-color: ;   
+--accent-color: #d00000 ;
+--background-color: #03071e;
+--text-light: #E5E7EB ;
+--text-dark: ;
+
+}
+
+
+
+
+
 nav {
+    margin: 0rem 3rem;
+    position: fixed;
+    top: 5px;
+    left: 50px;
+    right: 50px;
+    /* margin-bottom: 54px; */
+    
+}
+
+.nav-container {
     display: flex;
     justify-content: space-between;
     background-color: #1F2937;
     align-items: center;
     height: 54px;
     border-bottom: 1px red solid;
+    width: 100%;
+    /* margin-bottom: 54px; */
+
 }
 
 .navbar-links {
@@ -34,12 +65,12 @@ ul li {
 
 ul li a {
     text-decoration: none;
-    color: #E5E7EB;
+    color: var(--text-light);
 }
 
 .logo {
     font-size: 24px;
-    color: #F9FAF8;
+    color:  var(--text-light);
     padding-left: 60px;
 }
 .logo a {
@@ -50,11 +81,11 @@ ul li a {
               /* HERO SECTION */
 
 .hero-container {
-    background-color: #1F2937;
     height: 100vh;
-    color: #E5E7EB;
+    color: var(--text-light);
     display: flex;
     padding-top: 65px;
+    margin-top: 54px;
 }
 
 /* set boundary for contents on left */
@@ -78,7 +109,7 @@ ul li a {
 .hero-heading {
     font-size: 48px;
     font-weight: 900px;
-    color: #f9faf8;
+    color: var(--text-light);
     letter-spacing: 0.8px;
 }
 
@@ -110,9 +141,10 @@ padding: 14px 0px 43px 0px;
 
 }
 
-.info-section-heading {
+.info-section-header {
     display: flex;
     justify-content: center;
+    font-size: 1.5em;
 }
 
 /* info header text */
