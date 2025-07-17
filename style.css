@@ -119,16 +119,19 @@ font-size: 18px;
 padding: 14px 0px 43px 0px;
 }
 
-.hero-container button {
-    padding: 4px 10px;
-    font-size: 18px;
-    background-color: #3882F6;
-    border: none;
-    border-radius: 5px;
-    color: #E5E7EB;
-    cursor: pointer;
+
+.hero-btn {
+    color: var(--secondary-color);
+    padding: 0.3rem 1.2rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.4em;
     font-weight: bold;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--accent-color);
+    cursor: pointer;
 }
+
 
 
 /* INFO SECTION */
