@@ -102,8 +102,8 @@ ul li a {
 /* set boundary for contents on right */
 
 .right-hero img{
-    flex-shrink: 1;
-    flex-grow: 1;
+    width: auto;
+    height: 27rem;
 }
 
 /* heading in hero */
