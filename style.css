@@ -6,7 +6,7 @@
 
 html,
 body {
-    font-family: var(--primary-text), sans-serif;
+    font-family: var(--primary-font-family), sans-serif;
     background: var(--background-color);
 }
 
@@ -27,9 +27,9 @@ body {
 
 /* Font-amily */
 :root {
-    --primary-text: "IBM Plex Mono", 'Roboto', sans-serif;
-    --secondary-text: "Intel One Mono";
-    --accent-text: "DM Sans", sans-serif;
+    --primary-font-family: "IBM Plex Mono", 'Roboto', sans-serif;
+    --secondary-font-family: "Intel One Mono";
+    --accent-font-family: "DM Sans", sans-serif;
 
 }
 
@@ -70,6 +70,8 @@ ul li {
 ul li a {
     text-decoration: none;
     color: var(--text-dark);
+    font-family: var(--accent-font-family);
+    font-weight: 400;
 }
 
 .logo {
@@ -117,11 +119,25 @@ ul li a {
     font-weight: 900px;
     color: var(--text-light);
     letter-spacing: 0.8px;
+    /* Apply a horizontal linear gradient (left to right) */
+    background: linear-gradient(90deg, #ff6a00, #ee0979);
+    /* Clip the background to the text only - for WebKit browsers (Chrome, Safari) */
+    -webkit-background-clip: text;
+    /* Make the actual text fill transparent so the gradient shows through */
+    -webkit-text-fill-color: transparent;
+    /* These are additional properties for compatibility (e.g., Firefox) */
+    background-clip: text;
+    /* Clip background to text for non-WebKit browsers */
+    color: transparent;
+    /* Make the text itself transparent */
+
 }
 
 .secondary-text {
     font-size: 18px;
     padding: 14px 0px 43px 0px;
+    font-family: var(--secondary-font-family);
+    font-weight: 200;
 }
 
 
@@ -132,9 +148,10 @@ ul li a {
     font-size: 1.4em;
     font-weight: bold;
     border-radius: 5px;
-    border: none;
-    background-color: var(--accent-color);
+    border: var(--accent-color) solid 1px;
+    background: transparent;
     cursor: pointer;
+    font-family: var(--accent-font-family);
 }
 
 
