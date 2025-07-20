@@ -4,8 +4,9 @@
     box-sizing: border-box;
 }
 
-html, body {
-    font-family: 'Roboto', sans-serif;
+html,
+body {
+    font-family: var(--primary-text), sans-serif;
     background: var(--background-color);
 }
 
@@ -15,19 +16,21 @@ html, body {
 /* ------------------------- */
 /* website color palletes */
 :root {
---primary-color: #FF0000;  
---secondary-color:  #DF6C4F;   
---accent-color:#ffffff;
---background-color: #03071e;
---text-light: #E5E7EB ;
---text-dark: ;
+    --primary-color: #FF0000;
+    --secondary-color: #DF6C4F;
+    --accent-color: #ffffff;
+    --background-color: #03071e;
+    --text-light: #E5E7EB;
+    --text-dark: #black;
 
 }
 
 /* Font-amily */
 :root {
-    --primary-text: ;
-    --secondary-text: ;
+    --primary-text: "IBM Plex Mono", 'Roboto', sans-serif;
+    --secondary-text: "Intel One Mono";
+    --accent-text: "DM Sans", sans-serif;
+
 }
 
 
@@ -39,7 +42,7 @@ nav {
     left: 50px;
     right: 50px;
     /* margin-bottom: 54px; */
-    
+
 }
 
 .nav-container {
@@ -71,15 +74,17 @@ ul li a {
 
 .logo {
     font-size: 24px;
-    color:  var(--text-dark);
+    color: var(--text-dark);
     padding-left: 60px;
 }
+
 .logo a {
     text-decoration: none;
+    font-weight: 800;
 }
 
 
-              /* HERO SECTION */
+/* HERO SECTION */
 
 .hero-container {
     height: 100vh;
@@ -101,7 +106,7 @@ ul li a {
 
 /* set boundary for contents on right */
 
-.right-hero img{
+.right-hero img {
     width: auto;
     height: 27rem;
 }
@@ -115,8 +120,8 @@ ul li a {
 }
 
 .secondary-text {
-font-size: 18px;
-padding: 14px 0px 43px 0px;
+    font-size: 18px;
+    padding: 14px 0px 43px 0px;
 }
 
 
@@ -158,6 +163,7 @@ padding: 14px 0px 43px 0px;
     font-weight: 900;
     margin-bottom: 3rem;
 }
+
 .info-section h3 {
     color: var(--text-light);
     font-size: 1.2em;
@@ -169,8 +175,14 @@ padding: 14px 0px 43px 0px;
     gap: 5rem;
 }
 
+.box-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-family: ;
+}
+
 .box {
-    border: var(--accent-color) 3px solid;
+    /* border: var(--accent-color) 3px solid; */
     width: 350px;
     height: 350px;
     border-radius: 14px;
@@ -232,13 +244,14 @@ padding: 14px 0px 43px 0px;
 .card-body {
     color: var(--text-dark);
     display: flex;
-    align-items:center;
+    align-items: center;
     flex-direction: column;
     line-height: 2rem;
     font-size: 1.2em;
     gap: 1.2rem;
     text-transform: capitalize;
 }
+
 .card-body p {
     font-size: 1.2em;
 }
